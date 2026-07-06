@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromos</title>
+    <link rel="icon" href="./img/palindromo.png" type="image/png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" crossorigin src="./assets/index-CyNxg4wm.js"></script>
+</head>
+
+<body class="min-h-screen bg-slate-300 text-slate-900 flex items-center justify-center p-3 sm:p-6">
+    <main class="w-full max-w-3xl rounded-3xl bg-gradient-to-r from-blue-700 via-cyan-500 to-emerald-500 p-2 shadow-2xl">
+        <section class="w-full rounded-[1.25rem] bg-slate-100 px-4 py-5 sm:px-8 sm:py-7">
+            <h1 class="mb-4 border-b border-slate-400 pb-3 text-center text-2xl font-extrabold tracking-tight text-blue-700 sm:text-4xl">
+                ▶ Validar si una frase o palabra es un palindromo
+            </h1>
+            <p class="mb-3 text-center text-sm font-semibold leading-relaxed text-slate-700 sm:text-base">
+                Programa una funcion que valide si una palabra o frase dada es un palindromo.
+                Ejemplo: <span class="font-mono">mifuncion("Salas")</span> devuelve <span class="font-mono">true</span>.
+            </p>
+            <form id="palindromoForm" class="mt-4 w-full space-y-3" autocomplete="off" aria-labelledby="label-frase-palindromo">
+                <label for="frase" id="label-frase-palindromo" class="block w-full text-left text-sm font-semibold text-slate-700 sm:text-base">
+                    Escribe una frase o palabra para verificar si es un palindromo
+                </label>
+            <input type="text" id="frase" name="frase" placeholder="Ej: Salas" aria-required="true"
+                aria-describedby="ayuda-frase-palindromo"
+                class="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-base text-slate-800 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                required>
+            <span id="ayuda-frase-palindromo" class="block w-full text-left text-xs text-slate-500">El campo no puede estar
+                vacio.</span>
+            <div class="grid w-full grid-cols-1 gap-2 sm:grid-cols-3">
+                <button type="submit"
+                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-emerald-500 px-3 py-2 text-sm font-semibold text-white transition hover:bg-emerald-600 sm:px-4 sm:text-base">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16.862 4.487a2.25 2.25 0 0 1 2.651 2.651l-2.02 8.08a2.25 2.25 0 0 1-1.591 1.591l-8.08 2.02a2.25 2.25 0 0 1-2.651-2.651l2.02-8.08a2.25 2.25 0 0 1-1.591-1.591l8.08-2.02z" />
+                    </svg>
+                    Comprobar
+                </button>
+                <button type="reset" id="reiniciarBtn"
+                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 sm:px-4 sm:text-base">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.5 12a7.5 7.5 0 1 0 7.5-7.5M4.5 4.5v7h7" />
+                    </svg>
+                    Reiniciar
+                </button>
+                <a href="index.html"
+                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 px-3 py-2 text-center text-sm font-semibold text-white shadow-md transition hover:from-cyan-600 hover:to-emerald-600 sm:px-4 sm:text-base">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5 mr-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 12l6-6m-6 6l6 6" />
+                    </svg>
+                    Volver a Inicio
+                </a>
+            </div>
+            </form>
+            <div id="resultado" class="mt-4 min-h-10 text-center text-lg font-semibold"></div>
+        </section>
+    </main>
+</body>
+
+</html>
