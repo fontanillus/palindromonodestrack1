@@ -31,9 +31,9 @@
                 required>
             <span id="ayuda-frase-palindromo" class="block w-full text-left text-xs text-slate-500">El campo no puede estar
                 vacio.</span>
-            <div class="grid w-full grid-cols-1 gap-2 sm:grid-cols-3">
+            <div class="flex w-full flex-col items-center gap-2 sm:flex-row sm:justify-center">
                 <button type="submit"
-                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-emerald-500 px-3 py-2 text-sm font-semibold text-white transition hover:bg-emerald-600 sm:px-4 sm:text-base">
+                    class="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-500 px-3 py-2 text-sm font-semibold text-white transition hover:bg-emerald-600 sm:w-auto sm:min-w-40 sm:px-4 sm:text-base">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -42,7 +42,7 @@
                     Comprobar
                 </button>
                 <button type="reset" id="reiniciarBtn"
-                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 sm:px-4 sm:text-base">
+                    class="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 sm:w-auto sm:min-w-40 sm:px-4 sm:text-base">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -50,14 +50,6 @@
                     </svg>
                     Reiniciar
                 </button>
-                <a href="index.html"
-                    class="flex w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 px-3 py-2 text-center text-sm font-semibold text-white shadow-md transition hover:from-cyan-600 hover:to-emerald-600 sm:px-4 sm:text-base">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="w-5 h-5 mr-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 12l6-6m-6 6l6 6" />
-                    </svg>
-                    Volver a Inicio
-                </a>
             </div>
             </form>
             <div id="resultado" class="mt-4 min-h-10 text-center text-lg font-semibold"></div>
